@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit RSE - Réalisez votre Audit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Audit RSE - Évaluez votre impact</h1>
+    </header>
+
+    <section>
+        <h2>Complétez ce questionnaire pour effectuer votre audit RSE</h2>
+        <form id="rse-form">
+            <!-- Question 1 -->
+            <label for="environment">1. Quelle est la politique environnementale de votre entreprise ?</label><br>
+            <select id="environment" name="environment">
+                <option value="0">Aucune</option>
+                <option value="1">Partiellement implémentée</option>
+                <option value="2">Bien implémentée</option>
+                <option value="3">Excellente</option>
+            </select><br><br>
+
+            <!-- Question 2 -->
+            <label for="social">2. Comment évaluez-vous votre impact social ?</label><br>
+            <select id="social" name="social">
+                <option value="0">Aucun impact</option>
+                <option value="1">Impact faible</option>
+                <option value="2">Impact moyen</option>
+                <option value="3">Impact fort</option>
+            </select><br><br>
+
+            <!-- Question 3 -->
+            <label for="governance">3. Quelle est la transparence de votre gouvernance ?</label><br>
+            <select id="governance" name="governance">
+                <option value="0">Très faible</option>
+                <option value="1">Faible</option>
+                <option value="2">Moyenne</option>
+                <option value="3">Très élevée</option>
+            </select><br><br>
+
+            <!-- Question 4 -->
+            <label for="diversity">4. Votre entreprise met-elle en place des actions pour promouvoir la diversité et l'inclusion ?</label><br>
+            <select id="diversity" name="diversity">
+                <option value="0">Aucune action</option>
+                <option value="1">Actions limitées</option>
+                <option value="2">Actions régulières</option>
+                <option value="3">Actions avancées</option>
+            </select><br><br>
+
+            <!-- Question 5 -->
+            <label for="energy">5. Votre entreprise utilise-t-elle des énergies renouvelables ?</label><br>
+            <select id="energy" name="energy">
+                <option value="0">Non</option>
+                <option value="1">Partiellement</option>
+                <option value="2">Oui</option>
+            </select><br><br>
+
+            <!-- Question 6 -->
+            <label for="waste">6. Votre entreprise a-t-elle une politique de gestion des déchets ?</label><br>
+            <select id="waste" name="waste">
+                <option value="0">Non</option>
+                <option value="1">Partiellement</option>
+                <option value="2">Oui, efficace</option>
+            </select><br><br>
+
+            <!-- Question 7 -->
+            <label for="health">7. Votre entreprise met-elle en place des actions pour le bien-être et la santé de ses employés ?</label><br>
+            <select id="health" name="health">
+                <option value="0">Non</option>
+                <option value="1">Partiellement</option>
+                <option value="2">Oui</option>
+            </select><br><br>
+
+            <!-- Question 8 -->
+            <label for="community">8. Votre entreprise soutient-elle des initiatives communautaires (ONG, projets locaux, etc.) ?</label><br>
+            <select id="community" name="community">
+                <option value="0">Non</option>
+                <option value="1">Parfois</option>
+                <option value="2">Régulièrement</option>
+                <option value="3">Soutien actif et constant</option>
+            </select><br><br>
+
+            <!-- Question 9 -->
+            <label for="ethical">9. Votre entreprise applique-t-elle des pratiques éthiques dans ses relations commerciales et ses achats ?</label><br>
+            <select id="ethical" name="ethical">
+                <option value="0">Non</option>
+                <option value="1">Parfois</option>
+                <option value="2">Souvent</option>
+                <option value="3">Toujours</option>
+            </select><br><br>
+
+            <!-- Question 10 -->
+            <label for="transparency">10. Votre entreprise publie-t-elle des rapports RSE réguliers et transparents ?</label><br>
+            <select id="transparency" name="transparency">
+                <option value="0">Non</option>
+                <option value="1">Parfois</option>
+                <option value="2">Oui</option>
+            </select><br><br>
+
+            <!-- Bouton de soumission -->
+            <button type="button" class="cta-button" onclick="submitAudit()">Soumettre l'Audit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Audit RSE - Tous droits réservés</p>
+    </footer>
+
+    <script src="audit.js"></script>
+</body>
+</html>

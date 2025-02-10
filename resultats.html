@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit RSE - Résultats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Audit RSE - Résultats</h1>
+    </header>
+
+    <section>
+        <h2>Voici les résultats de votre audit RSE</h2>
+
+        <!-- Affichage du logo -->
+        <div class="logo-container">
+            <img src="logo.webp" alt="Logo de l'entreprise" class="logo">
+        </div>
+
+        <!-- Résultat de l'audit -->
+        <div id="result">
+            <p>En fonction de vos réponses, voici votre score global :</p>
+            <p id="score"></p>
+            <p id="message"></p>
+        </div>
+
+        <p>Pour plus d'informations sur les actions RSE que vous pourriez mettre en place, n'hésitez pas à nous contacter par mail : <a href="mailto:contact@sourireatous.com">contact@sourireatous.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Audit RSE - Tous droits réservés</p>
+    </footer>
+
+    <script>
+        // Récupérer le score de l'URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const score = parseInt(urlParams.get('score'));
+
+        // Afficher le score et le message en fonction du résultat
+        document.getElementById("score").textContent = `Votre score RSE est : ${score}`;
+
+        let message = '';
+        if (score <= 20) {
+            message = "Votre entreprise a encore beaucoup de travail à faire pour améliorer ses pratiques RSE.";
+        } else if (score <= 30) {
+            message = "Votre entreprise a fait des efforts, mais il reste encore des actions à entreprendre pour améliorer son impact.";
+        } else if (score <= 40) {
+            message = "Votre entreprise met en place des actions positives, mais il reste des marges de progrès.";
+        } else {
+            message = "Excellente performance ! Votre entreprise est un exemple de bonnes pratiques RSE.";
+        }
+
+        document.getElementById("message").textContent = message;
+    </script>
+</body>
+</html>

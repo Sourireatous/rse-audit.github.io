@@ -1,0 +1,120 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;  /* Fond clair */
+    margin: 0;
+    padding: 0;
+    color: #333;  /* Texte sombre pour une bonne lisibilité */
+}
+
+/* Entête */
+header {
+    background-color: #d32f2f;  /* Rouge */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Section principale */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre de la section */
+h2 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+/* Formulaire */
+form {
+    display: grid;
+    gap: 15px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+    color: #444;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+select:focus {
+    border-color: #d32f2f;
+}
+
+/* Bouton de soumission */
+.cta-button {
+    background-color: #d32f2f;  /* Rouge */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background-color: #c2185b;  /* Rouge plus foncé au survol */
+}
+
+/* Pied de page */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.8em; /* Réduit la taille du texte */
+}
+
+/* Conteneur du logo */
+.logo-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.logo {
+    width: 150px;  /* Taille du logo */
+    height: auto;
+    border-radius: 8px;  /* Si vous voulez des bords arrondis autour du logo */
+}
+
+/* Lien de contact */
+a {
+    color: #d32f2f;  /* Rouge pour les liens */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;  /* Soulignement du lien au survol */
+}
